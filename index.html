@@ -1,0 +1,706 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medical Diagonsis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+
+        }
+
+        body {
+            background-color: #050547;
+            color: white;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        nav {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            height: 80px;
+            background-color: #0a0a5d;
+        }
+
+        nav ul {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav ul li {
+            list-style: none;
+            margin: 0 23px;
+        }
+
+        nav ul li a {
+            text-decoration: none;
+            color: white;
+        }
+
+        nav ul li a:hover {
+            color: rgb(112, 112, 227);
+            font-size: 1.04rem;
+        }
+
+
+        .left {
+            font-size: 1.5rem;
+            margin: 70px 0;
+        }
+
+        #firstSection {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            margin: 120px 0;
+        }
+
+        .firstSection>div {
+            width: 30%;
+        }
+
+        .leftSection {
+            font-size: 2.5rem;
+        }
+
+        .rightSection img {
+            width: 100%;
+            height: 80%;
+        }
+
+        .purple {
+            color: rgb(138, 49, 201);
+        }
+
+        .text-gray {
+            color: gray;
+        }
+
+        #element {
+            color: rgb(138, 49, 201);
+        }
+
+
+        /* About Section */
+        #about {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 60px 0;
+        }
+
+        .about-section-title {
+            font-size: 2em;
+            font-weight: bold;
+            text-align: left;
+            width: 100%;
+
+            padding: 0 160px;
+        }
+
+        .about-container {
+            display: flex;
+            align-items: center;
+            background-color: #3b208c;
+            padding: 30px;
+            border-radius: 10px;
+            width: 80%;
+        }
+
+        .about-content {
+            margin-left: 20px;
+            color: white;
+        }
+
+        .about-content h2 {
+            font-size: 30px;
+        }
+
+
+        /* education section */
+
+
+        #education-section {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+        }
+
+        .education-heading {
+            text-align: left;
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .education-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .education-timeline {
+            width: 55%;
+            position: relative;
+        }
+
+        .education-box {
+            background: #29295C;
+            padding: 20px 30px;
+            border-radius: 10px;
+            position: relative;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .education-box::before {
+            content: "";
+            position: absolute;
+            left: -20px;
+            top: 50%;
+            transform: translateY(-50%);
+            width: 10px;
+            height: 10px;
+            background: red;
+            border-radius: 50%;
+        }
+
+        .timeline-line {
+            position: absolute;
+            left: -15px;
+            top: 0;
+            width: 2px;
+            height: 100%;
+            background: red;
+        }
+
+        .logo img {
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .education-content {
+            flex-grow: 1;
+        }
+
+        .education-image {
+            width: 30%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .education-image img {
+            max-width: 100%;
+            border-radius: 10px;
+        }
+
+        #skills {
+            padding: 50px 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .skills-content {
+            display: flex;
+            align-items: flex-start;
+            max-width: 80%;
+            margin: auto;
+        }
+
+        .skills-left {
+            width: 40%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .skills-section-title {
+            font-size: 2em;
+            font-weight: bold;
+            text-align: left;
+            width: 100%;
+            margin-bottom: 20px;
+            padding: 0 160px;
+        }
+
+        .skills-image {
+            width: 100%;
+        }
+
+        .skills-image img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .skills-right {
+            width: 60%;
+            padding-left: 30px;
+        }
+
+        .section-description {
+            font-size: 1.25em;
+            color: #aaa;
+            text-align: left;
+        }
+
+        .skills-container {
+            font-size: 1.2em;
+            margin-top: 20px;
+        }
+
+        .skill {
+            margin: 15px 0;
+        }
+
+        .progress-bar {
+            background: #333;
+            border-radius: 25px;
+            height: 20px;
+            position: relative;
+            width: 100%;
+            margin-top: 5px;
+        }
+
+        .progress {
+            background: limegreen;
+            height: 100%;
+            border-radius: 25px;
+        }
+
+        .progress-bar span {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            font-size: 0.9em;
+            font-weight: bold;
+        }
+
+        .projects-section {
+            width: 80%;
+            /* Match with other sections */
+            margin: auto;
+            padding: 50px 0;
+        }
+
+        .section-title {
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .section-subtitle {
+            font-style: italic;
+            margin-bottom: 20px;
+        }
+
+        .projects-grid {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+
+        .project-card {
+            width: 28%;
+            background-color: #0a0a5d;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s;
+        }
+
+        .project-card img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+
+        .project-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .project-link {
+            display: block;
+            margin-top: 10px;
+            color: #007BFF;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-link:hover {
+            text-decoration: underline;
+        }
+
+        .projects-section {
+            width: 80%;
+            /* Match with other sections */
+            margin: auto;
+            padding: 50px 0;
+        }
+
+        #contact-section {
+            width: 80%;
+            margin: auto;
+            padding: 50px 0;
+            text-align: left;
+            color: white;
+            font-size: 1.5rem;
+        }
+
+        .contact-form {
+            background-color: #0a0a5d;
+            padding: 30px;
+            border-radius: 10px;
+            box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+            width: 50%;
+            margin: auto;
+            text-align: center;
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: none;
+            background: #1a1a7a;
+            color: white;
+        }
+
+
+        .contact-form button {
+            width: 100%;
+            padding: 10px;
+            background: #0509f9;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        footer {
+            background-color: #0a0a5d;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .footer-container {
+            max-width: 960px;
+            margin: 0 auto;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .footer-section {
+            width: 16%;
+            margin-bottom: 20px;
+        }
+
+        h4 {
+            color: rgb(179, 176, 176);
+            margin-bottom: 15px;
+            font-size: 1.16rem;
+        }
+
+        p {
+            margin-bottom: 5px;
+            line-height: 1.6;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .footer-section {
+                width: 45%;
+            }
+        }
+
+        @media (max-width: 480px) {
+            .footer-section {
+                width: 100%;
+            }
+        }
+
+        footer .footer-rights {
+            text-align: center;
+            color: gray;
+            padding: 12px 0;
+        }
+    </style>
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="left"> Medical Diagonsis Using Scanned Images</div>
+            <div class="right">
+                <ul>
+                    <li> <a href="#firstSection">Home</a> </li>
+                    <li> <a href="#about">About Us</a> </li>
+                    <li> <a href="#education-section">Hospitals</a> </li>
+                    <li> <a href="#skills">Accuracy</a> </li>
+                    <li> <a href="#projects">Models</a> </li>
+                    <li> <a href="#contact-section">Contact Us</a> </li>
+                </ul>
+            </div>
+
+        </nav>
+    </header>
+    <main>
+        <section id="firstSection">
+            <div class="leftSection">
+                AI-powered <span class="purple"> Medical Diagnostics </span>
+                <div>for rapid and accurate detection of</div>
+                <span id="element"></span>
+                <div>using advanced deep learning</div>
+            </div>
+            <div class="rightSection">
+                <img src="home.png" alt="">
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <h2 class="about-section-title">About Us</h2>
+        <section id="about">
+
+            <div class="about-container">
+
+                <div class="about-content">
+                    <p>We are a team of passionate researchers and developers dedicated to leveraging the
+                        power of deep learning to revolutionize medical diagnostics. Our platform utilizes
+                        cutting-edge AI algorithms to analyze medical images and assist healthcare professionals
+                        in accurately detecting kidney tumors, pneumonia, malaria, and brain tumors. We believe
+                        that by combining the precision of deep learning with the expertise of medical professionals,
+                        we can improve patient outcomes and contribute to a healthier future
+                    </p>
+                </div>
+            </div>
+        </section>
+        <!--         
+Education section -->
+        <section id="education-section">
+            <div class="education-heading">
+                <h2>Hospitals</h2>
+            </div>
+            <div class="education-container">
+                <div class="education-timeline">
+                    <div class="education-box">
+                        <div class="timeline-line"></div>
+                        <!-- <div class="logo"><img src="university_logo1.png" alt="University Logo"></div>
+                        <div class="education-content">
+                            <h3>Bharatiya Engineering Science and Technology Innovation University</h3>
+                            <p>December 2021 - April 2025</p>
+                            <p>Computer Science and Engineering with specialization in Data Science</p>
+                            <strong>CGPA: </strong> 8.6</p>
+                        </div>
+                    </div>
+                    <div class="education-box">
+                        <div class="timeline-line"></div>
+                        <div class="logo"><img src="university_logo2.png" alt="University Logo"></div>
+                        <div class="education-content">
+                            <h3>Sri Chaitanya Junior College</h3>
+                            <p>june 2019 - march 2021</p>
+                            <p>Mathematics Physics and Chemistry</p>
+                            <strong>CGPA: </strong> 9.5 </p>
+                        </div>
+                    </div>
+                    <div class="education-box">
+                        <div class="timeline-line"></div>
+                        <div class="logo"><img src="school_logo.png" alt="School Logo"></div>
+                        <div class="education-content">
+                            <h3>Zilla Parishad High School</h3>
+                            <p>June 2018 - April 2019</p>
+                            <p>Board Of Andhra Pradesh</p>
+                            <strong>CGPA: </strong> 8.8 </p>
+                        </div>
+                    </div> -->
+                    </div>
+                    <div class="education-image">
+                        <img src="education_image.png" alt="Hospital Illustration">
+                    </div>
+                </div>
+        </section>
+
+
+        <!-- Skills Section -->
+        <h2 class="skills-section-title">Accuracy with Algorithm used</h2>
+        <section id="skills">
+
+            <div class="skills-content">
+                <div class="skills-left">
+
+                    <div class="skills-image">
+                        <img src="accuracy.jpg" alt="Skills Image">
+                    </div>
+                </div>
+
+
+                <div class="skills-right">
+                    <p class="section-description">
+                        Our platform delivers precise diagnoses using sophisticated deep learning algorithms.
+                        Accuracy is paramount, achieved through extensive training and continuous model refinement.
+                        We provide clinicians with dependable insights.
+                    </p>
+
+                    <div class="skills-container">
+                        <div class="skill">
+                            <span>Kidney Tumor Prediction using CNN Model</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 97%;"></div><span>97%</span>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Pneumonia Prediction using CNN Model</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 86.72%;"></div><span>86.72%</span>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Malaria Prediction using CNN Model</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 92.79%;"></div><span>92.79</span>
+                            </div>
+                        </div>
+                        <div class="skill">
+                            <span>Brain Tumor prediction using CNN Model</span>
+                            <div class="progress-bar">
+                                <div class="progress" style="width: 98.6%;"></div><span>98.6%</span>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
+
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <h2 class="section-title">Predictive Models</h2>
+                <p class="section-subtitle">
+                </p>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="Kidney_refernce.jpg" alt="Kidney_refernce">
+                        <h3>Kidney Tumor Prediction</h3>
+                        <p>Early detection saves lives. Predict kidney tumors with our AI tool. Start your assessment
+                            now</p>
+                        <a href="#paste the link"
+                            class="project-link">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="Pneumonia_reference.jpg" alt="Pneumonia_reference">
+                        <h3>Pneumonia Prediction</h3>
+                        <p>Our AI model can help identify potential cases of pneumonia. Start your prediction now!</p>
+                        <a href="#paste the link" class="project-link">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="malaria_reference.jpg" alt="malaria_reference">
+                        <h3>Malaria Prediction</h3>
+                        <p>Detect malaria early with our AI-powered tool</p>
+                        <a href="#paste the link" class="project-link">View Project</a>
+                    </div>
+                    <div class="project-card">
+                        <img src="Brain_reference.jpg" alt="Brain_reference">
+                        <h3>Brain Tumor prediction </h3>
+                        <p>Our AI-powered tool can help identify potential brain tumors from medical images.
+                            click below, for faster, more accurate diagnosis.
+                        </p>
+                        <a href="#paste the link" class="project-link">View
+                            Project</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="contact-section">
+            <h2>Contact Us</h2>
+            <p></p>
+            <div class="contact-form">
+                <h3>Email Me 🚀</h3>
+                <input type="email" placeholder="Your Email">
+                <input type="text" placeholder="Your Name">
+                <input type="text" placeholder="Subject">
+                <textarea placeholder="Message"></textarea>
+                <button>Send</button>
+            </div>
+        </section>
+
+    </main>
+
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-section">
+                <h4> Medical Diagonsis Using Scanned Images</h4>
+                <p></p>
+            </div>
+            <div class="footer-section">
+                <h4>Important Links</h4>
+                <ul>
+
+                    <li> <a href="#firstSection">Home</a> </li>
+                    <li> <a href="#about">About Us</a> </li>
+                    <li> <a href="#education-section">Hospitals</a> </li>
+                    <li> <a href="#skills">Accuracy</a> </li>
+                    <li> <a href="#projects">Models</a> </li>
+                    <li> <a href="#contact-section">Contact Us</a> </li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p>BEST Innovation University</p>
+                <p>bestiu.edu.in</p>
+                <p>Bangalore, Karanataka, India</p>
+            </div>
+
+        </div>
+        </div>
+        <div class="footer-rights">
+            Copyright &#169; bestiu.2021-2025batch.com | All rights reserved
+        </div>
+    </footer>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <!-- Setup and start animation! -->
+    <script>
+        var typed = new Typed('#element', {
+            strings: ['kidney tumors', 'pneumonia', 'malaria', 'brain tumors', 'kidney tumors', 'pneumonia', 'malaria', 'brain tumors', 'kidney tumors', 'pneumonia', 'malaria', 'brain tumors', 'kidney tumors', 'pneumonia', 'malaria', 'brain tumors', 'kidney tumors', 'pneumonia', 'malaria', 'brain tumors', 'kidney tumors', 'pneumonia', 'malaria', 'brain tumors'],
+            typeSpeed: 150,
+        });
+    </script>
+
+
+</body>
+
+</html>
