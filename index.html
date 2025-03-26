@@ -108,7 +108,7 @@
         .about-container {
             display: flex;
             align-items: center;
-            background-color: #3b208c;
+            background-color: #29295C;
             padding: 30px;
             border-radius: 10px;
             width: 80%;
@@ -127,31 +127,31 @@
         /* education section */
 
 
-        #education-section {
+        #hospital-section {
             width: 80%;
             margin: auto;
             padding: 50px 0;
         }
 
-        .education-heading {
+        .hospital-heading {
             text-align: left;
             font-size: 24px;
             font-weight: bold;
             margin-bottom: 20px;
         }
 
-        .education-container {
+        .hospital-container {
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
         }
 
-        .education-timeline {
+        .hospital-timeline {
             width: 55%;
             position: relative;
         }
 
-        .education-box {
+        .hospital-box {
             background: #29295C;
             padding: 20px 30px;
             border-radius: 10px;
@@ -162,7 +162,7 @@
             gap: 15px;
         }
 
-        .education-box::before {
+        .hospital-box::before {
             content: "";
             position: absolute;
             left: -20px;
@@ -189,42 +189,42 @@
             border-radius: 50%;
         }
 
-        .education-content {
+        .hospital-content {
             flex-grow: 1;
         }
 
-        .education-image {
+        .hospital-image {
             width: 30%;
             display: flex;
             justify-content: center;
         }
 
-        .education-image img {
+        .hospital-image img {
             max-width: 100%;
             border-radius: 10px;
         }
 
-        #skills {
+        #accuracy {
             padding: 50px 0;
             display: flex;
             justify-content: center;
         }
 
-        .skills-content {
+        .accuracy-content {
             display: flex;
             align-items: flex-start;
             max-width: 80%;
             margin: auto;
         }
 
-        .skills-left {
+        .accuracy-left {
             width: 40%;
             display: flex;
             flex-direction: column;
             align-items: center;
         }
 
-        .skills-section-title {
+        .accuracy-section-title {
             font-size: 2em;
             font-weight: bold;
             text-align: left;
@@ -233,16 +233,16 @@
             padding: 0 160px;
         }
 
-        .skills-image {
+        .accuracy-image {
             width: 100%;
         }
 
-        .skills-image img {
+        .accuracy-image img {
             width: 100%;
             border-radius: 10px;
         }
 
-        .skills-right {
+        .accuracy-right {
             width: 60%;
             padding-left: 30px;
         }
@@ -253,12 +253,12 @@
             text-align: left;
         }
 
-        .skills-container {
+        .accuracy-container {
             font-size: 1.2em;
             margin-top: 20px;
         }
 
-        .skill {
+        .accuracy {
             margin: 15px 0;
         }
 
@@ -286,7 +286,7 @@
             font-weight: bold;
         }
 
-        .projects-section {
+        .models-section {
             width: 80%;
             /* Match with other sections */
             margin: auto;
@@ -303,14 +303,14 @@
             margin-bottom: 20px;
         }
 
-        .projects-grid {
+        .models-grid {
             display: flex;
             justify-content: center;
             gap: 30px;
             flex-wrap: wrap;
         }
 
-        .project-card {
+        .models-card {
             width: 28%;
             background-color: #0a0a5d;
             padding: 15px;
@@ -319,17 +319,17 @@
             transition: transform 0.3s;
         }
 
-        .project-card img {
+        .models-card img {
             width: 100%;
             height: auto;
             border-radius: 10px;
         }
 
-        .project-card:hover {
+        .models-card:hover {
             transform: translateY(-5px);
         }
 
-        .project-link {
+        .models-link {
             display: block;
             margin-top: 10px;
             color: #007BFF;
@@ -337,11 +337,11 @@
             font-weight: bold;
         }
 
-        .project-link:hover {
+        .models-link:hover {
             text-decoration: underline;
         }
 
-        .projects-section {
+        .models-section {
             width: 80%;
             /* Match with other sections */
             margin: auto;
@@ -467,9 +467,9 @@
                 <ul>
                     <li> <a href="#firstSection">Home</a> </li>
                     <li> <a href="#about">About Us</a> </li>
-                    <li> <a href="#education-section">Hospitals</a> </li>
-                    <li> <a href="#skills">Accuracy</a> </li>
-                    <li> <a href="#projects">Models</a> </li>
+                    <li> <a href="#hospital-section">Hospitals</a> </li>
+                    <li> <a href="#accuracy">Accuracy</a> </li>
+                    <li> <a href="#models">Models</a> </li>
                     <li> <a href="#contact-section">Contact Us</a> </li>
                 </ul>
             </div>
@@ -497,101 +497,116 @@
 
                 <div class="about-content">
                     <p>We are a team of passionate researchers and developers dedicated to leveraging the
-                        power of deep learning to revolutionize medical diagnostics. Our platform utilizes
-                        cutting-edge AI algorithms to analyze medical images and assist healthcare professionals
-                        in accurately detecting kidney tumors, pneumonia, malaria, and brain tumors. We believe
-                        that by combining the precision of deep learning with the expertise of medical professionals,
-                        we can improve patient outcomes and contribute to a healthier future
-                    </p>
+                        power of deep learning to revolutionize medical diagnostics. <br> 
+                        At <strong>Medical Diagnosis Using Deep Learning</strong>, we are dedicated to leveraging the power of deep learning to advance medical diagnostics. Our mission is to develop AI-powered solutions that assist in the early detection of critical diseases, enabling timely intervention and improved healthcare outcomes.</p>
+                            <br>
+                            <h3>Our Disease Prediction Models:</h3>
+                            <br>
+                            <ul>
+                                <li><strong>Pneumonia Detection:</strong> Analyzing chest X-ray images to identify pneumonia cases with high accuracy.</li><br>
+                                <li><strong>Brain Tumor Classification:</strong> Utilizing deep learning to distinguish between normal and tumor-affected brain scans.</li><br>
+                                <li><strong>Kidney Tumor Prediction:</strong> Assisting in the early detection of kidney tumors through advanced image classification.</li><br>
+                                <li><strong>Malaria Detection:</strong> Identifying malaria-infected blood samples to aid in rapid diagnosis.</li><br>
+                            </ul>
+                    
+                                <p>         By combining artificial intelligence with medical imaging, our models provide reliable and efficient predictions, supporting healthcare professionals in making informed decisions. Our goal is to bridge the gap between technology and medicine, making healthcare more accessible and accurate.</p>
+                    
+                            <p>Join us on our journey to revolutionize disease detection with AI-driven innovation.</p>
+                            <br>
+                            <p><strong>Please Note: </strong>  This is in under devolpment stage, so Please upload correct image while predicting the results.
+                            It will predict all images because it is now running by probality bases. </p>
+                        </div>
+                    </section>
+                    
                 </div>
             </div>
         </section>
         <!--         
 Education section -->
-        <section id="education-section">
-            <div class="education-heading">
+        <section id="hospital-section">
+            <div class="hospital-heading">
                 <h2>Hospitals</h2>
             </div>
-            <div class="education-container">
-                <div class="education-timeline">
-                    <div class="education-box">
+            <div class="hospital-container">
+                <div class="hospital-timeline">
+                    <div class="hospital-box">
                         <div class="timeline-line"></div>
-                        <!-- <div class="logo"><img src="university_logo1.png" alt="University Logo"></div>
-                        <div class="education-content">
-                            <h3>Bharatiya Engineering Science and Technology Innovation University</h3>
-                            <p>December 2021 - April 2025</p>
-                            <p>Computer Science and Engineering with specialization in Data Science</p>
-                            <strong>CGPA: </strong> 8.6</p>
+                        <div class="logo"><img src="manipal-logo.jpg" alt="Hospital Logo"></div>
+                        <div class="hospital-content">
+                            <h3>Manipal Hospital</h3>
+                            <strong>Contact Info:</strong>
+                            <p>+91 7411747070, 08024494100</p>
+                            <p> Bangalore Karanataka India</p>
                         </div>
                     </div>
-                    <div class="education-box">
+                    <div class="hospital-box">
                         <div class="timeline-line"></div>
-                        <div class="logo"><img src="university_logo2.png" alt="University Logo"></div>
-                        <div class="education-content">
-                            <h3>Sri Chaitanya Junior College</h3>
-                            <p>june 2019 - march 2021</p>
-                            <p>Mathematics Physics and Chemistry</p>
-                            <strong>CGPA: </strong> 9.5 </p>
+                        <div class="logo"><img src="Aster-logo.jpg" alt="Hospital Logo"></div>
+                        <div class="hospital-content">
+                            <h3>Aster Hospital</h3>
+                            <strong>Contact Info:</strong>
+                            <p>+91 7411790197</p>
+                            <p> Bangalore Karanataka India</p>
                         </div>
                     </div>
-                    <div class="education-box">
+                    <div class="hospital-box">
                         <div class="timeline-line"></div>
-                        <div class="logo"><img src="school_logo.png" alt="School Logo"></div>
-                        <div class="education-content">
-                            <h3>Zilla Parishad High School</h3>
-                            <p>June 2018 - April 2019</p>
-                            <p>Board Of Andhra Pradesh</p>
-                            <strong>CGPA: </strong> 8.8 </p>
+                        <div class="logo"><img src="HCG-logo" alt="Hospital Logo"></div>
+                        <div class="hospital-content">
+                            <h3>HCG Cancer Center </h3>
+                            <strong>Contact Info:</strong>
+                            <p>+91 7048216264, 18001026626</p>
+                            <p> Bangalore Karanataka India</p>
                         </div>
-                    </div> -->
                     </div>
-                    <div class="education-image">
-                        <img src="education_image.png" alt="Hospital Illustration">
+                    </div>
+                    <div class="hospital-image">
+                        <img src="hospital_logo.jpg" alt="Hospital Illustration">
                     </div>
                 </div>
         </section>
 
 
-        <!-- Skills Section -->
-        <h2 class="skills-section-title">Accuracy with Algorithm used</h2>
-        <section id="skills">
+        <!-- accuracy Section -->
+        <h2 class="accuracy-section-title">Accuracy with Algorithm used</h2>
+        <section id="accuracy">
 
-            <div class="skills-content">
-                <div class="skills-left">
+            <div class="accuracy-content">
+                <div class="accuracy-left">
 
-                    <div class="skills-image">
-                        <img src="accuracy.jpg" alt="Skills Image">
+                    <div class="accuracy-image">
+                        <img src="accuracy.jpg" alt="accuracy Image">
                     </div>
                 </div>
 
 
-                <div class="skills-right">
+                <div class="accuracy-right">
                     <p class="section-description">
                         Our platform delivers precise diagnoses using sophisticated deep learning algorithms.
                         Accuracy is paramount, achieved through extensive training and continuous model refinement.
                         We provide clinicians with dependable insights.
                     </p>
 
-                    <div class="skills-container">
-                        <div class="skill">
+                    <div class="accuracy-container">
+                        <div class="accuracy">
                             <span>Kidney Tumor Prediction using CNN Model</span>
                             <div class="progress-bar">
                                 <div class="progress" style="width: 97%;"></div><span>97%</span>
                             </div>
                         </div>
-                        <div class="skill">
+                        <div class="accuracy">
                             <span>Pneumonia Prediction using CNN Model</span>
                             <div class="progress-bar">
                                 <div class="progress" style="width: 86.72%;"></div><span>86.72%</span>
                             </div>
                         </div>
-                        <div class="skill">
+                        <div class="accuracy">
                             <span>Malaria Prediction using CNN Model</span>
                             <div class="progress-bar">
-                                <div class="progress" style="width: 92.79%;"></div><span>92.79</span>
+                                <div class="progress" style="width: 94.75%;"></div><span>94.75</span>
                             </div>
                         </div>
-                        <div class="skill">
+                        <div class="accuracy">
                             <span>Brain Tumor prediction using CNN Model</span>
                             <div class="progress-bar">
                                 <div class="progress" style="width: 98.6%;"></div><span>98.6%</span>
@@ -606,40 +621,39 @@ Education section -->
 
 
 
-        <section id="projects" class="projects-section">
+        <section id="models" class="models-section">
             <div class="container">
                 <h2 class="section-title">Predictive Models</h2>
                 <p class="section-subtitle">
                 </p>
-                <div class="projects-grid">
-                    <div class="project-card">
+                <div class="models-grid">
+                    <div class="models-card">
                         <img src="Kidney_refernce.jpg" alt="Kidney_refernce">
                         <h3>Kidney Tumor Prediction</h3>
                         <p>Early detection saves lives. Predict kidney tumors with our AI tool. Start your assessment
                             now</p>
-                        <a href="#paste the link"
-                            class="project-link">View Project</a>
+                        <a href="https://kidneytumorwebsite.streamlit.app/"
+                            class="models-link">Click to open</a>
                     </div>
-                    <div class="project-card">
+                    <div class="models-card">
                         <img src="Pneumonia_reference.jpg" alt="Pneumonia_reference">
                         <h3>Pneumonia Prediction</h3>
                         <p>Our AI model can help identify potential cases of pneumonia. Start your prediction now!</p>
-                        <a href="#paste the link" class="project-link">View Project</a>
+                        <a href="https://chestdiseasepredictionwebsite.streamlit.app/" class="models-link">Click to open</a>
                     </div>
-                    <div class="project-card">
+                    <div class="models-card">
                         <img src="malaria_reference.jpg" alt="malaria_reference">
                         <h3>Malaria Prediction</h3>
                         <p>Detect malaria early with our AI-powered tool</p>
-                        <a href="#paste the link" class="project-link">View Project</a>
+                        <a href="https://malariadisease.streamlit.app/" class="models-link">Click to open</a>
                     </div>
-                    <div class="project-card">
+                    <div class="models-card">
                         <img src="Brain_reference.jpg" alt="Brain_reference">
                         <h3>Brain Tumor prediction </h3>
                         <p>Our AI-powered tool can help identify potential brain tumors from medical images.
                             click below, for faster, more accurate diagnosis.
                         </p>
-                        <a href="#paste the link" class="project-link">View
-                            Project</a>
+                        <a href="https://braintumorpredictiona.streamlit.app/" class="models-link">Click to open</a>
                     </div>
                 </div>
             </div>
@@ -672,9 +686,9 @@ Education section -->
 
                     <li> <a href="#firstSection">Home</a> </li>
                     <li> <a href="#about">About Us</a> </li>
-                    <li> <a href="#education-section">Hospitals</a> </li>
-                    <li> <a href="#skills">Accuracy</a> </li>
-                    <li> <a href="#projects">Models</a> </li>
+                    <li> <a href="#hospital-section">Hospitals</a> </li>
+                    <li> <a href="#accuracy">Accuracy</a> </li>
+                    <li> <a href="#models">Models</a> </li>
                     <li> <a href="#contact-section">Contact Us</a> </li>
                 </ul>
             </div>
